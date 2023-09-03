@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+    <head>
+        <style>
+            input[type="submit"] {background-color: greenyellow;
+            color: darkblue;
+            font-size: 20px;
+        }
+        input[type="reset"] {background-color: red;
+            color: black;
+            font-size: 20px;}
+        </style>
+    </head>
+    <main>
+        <body>
+            <header>
+                <h1>Queremos conocerlo:</h1>
+            </header>
+            <form method="get">
+                <fieldset>
+                <legend><h2>Datos personales:</h2></legend>
+                <label for="Apellido">Apellido</label>
+                <input type="text" id="Apellido" name="Apellido">
+                <label for="Nombre">Nombre</label>
+                <input type="text" id="Nombre" name="Nombre"><br>
+                <label for="dni">Número de D.N.I.</label>
+                <input type="number" id="dni" name="dni" min="10" max="10000000">
+                <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br>
+                <label for="Domicilio">Domicilio</label>
+                <input type="text" id="Domicilio" name="Domicilio">
+                <label for="Localidad">Localidad</label>
+                <input type="text" id="Localidad" name="Localidad"><br>
+                </fieldset>
+                <fieldset>
+                    <legend><h2>Conocimiento de lenguajes:</h2></legend>
+                    <header><h3>Idiomas que usted maneja:</h3></header><br>
+                    <label for="Inglés">Inglés</label>
+                    <input type="checkbox" id="Inglés" name="Inglés"><br>
+                    <input type="range" id="Nivel_Inglés" name="Nivel_Inglés" min="0" max="100"><br>
+                    <p> 0---------50---------100</p><br>
+                    <label for="Portugués">Portugués</label>
+                    <input type="checkbox" id="Portugués" name="Portugués"><br>
+                    <input type="range" id="Nivel_Portugués" name="Nivel_Portugués" min="0" max="100"><br>
+                    <p> 0---------50---------100</p><br>
+                    <label for="Alemán">Alemán</label>
+                    <input type="checkbox" id="Alemán" name="Alemán"><br>
+                    <input type="range" id="Nivel_Alemán" name="Nivel_Alemán" min="0" max="100"><br>
+                    <p> 0---------50---------100</p><br>
+                    <label for="Indio">Indio</label>
+                    <input type="checkbox" id="Indio" name="Indio"><br>
+                    <input type="range" id="Nivel_Indio" name="Nivel_Indio" min="0" max="100"><br>
+                    <p> 0---------50---------100</p><br>
+                </fieldset>
+                <fieldset>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar todo">
+                </fieldset>
+            </form>
+        </body>
+        <footer>
+        </footer>
+    </main>
+</html>
