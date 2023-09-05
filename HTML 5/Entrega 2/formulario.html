@@ -1,22 +1,50 @@
 <!DOCTYPE html>
 <html lang="es-AR">
     <head>
-        <style>
-            input[type="submit"] {background-color: greenyellow;
-            color: darkblue;
-            font-size: 20px;
+    <meta charset="utf-8">
+    <style>
+        button[type="submit"] {background-color: greenyellow;
+        color: darkblue;
+        height: 75px;
+        width: 100px;
+        font-size: 25px;
         }
-        input[type="reset"] {background-color: red;
-            color: black;
-            font-size: 20px;}
-        </style>
+        button[type="reset"] {background-color: red;
+        color: black;
+        height: 75px;
+        width: 100px;
+        font-size: 18px;
+        }
+    </style>
+    <script>
+		function mostrarDatosCopiarPegar(){
+			vnombre = document.getElementById("Nombre").value;
+			vapellido = document.getElementById("Apellido").value;
+			vnum = document.getElementById("dni").value;
+			/* Imprime los datos */		
+			document.write("Los datos ingresados fueron: <br/>");
+			document.write("Apellido: "+vapellido+"<br/>");
+			document.write("Nombre: "+vnombre+"<br/>");
+			document.write("Documento: "+vnum+"<br/>");
+            document.write("<br/>");
+            document.write("Por razones de seguridad nacional, sólo se muestran estos datos. El resto será almacenado y analizado por el bienestar de nuestro glorioso régimen");
+			/*******************************************************/
+				for (var i = 0; i <  radios.length; i++) {
+				if (radios[i].checked) {
+					var vvgen = radios[i].value;
+					break;
+				}
+				}
+			/**********************************************/
+		}
+		</script>
     </head>
     <main>
         <body>
             <header>
                 <h1>Queremos conocerlo:</h1>
             </header>
-            <form method="get">
+            <form action="" method="post">
                 <fieldset>
                 <legend><h2>Datos personales:</h2></legend>
                 <label for="Apellido">Apellido</label>
@@ -53,8 +81,8 @@
                     <p> 0---------50---------100</p><br>
                 </fieldset>
                 <fieldset>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar todo">
+                    <button type="submit" onClick="mostrarDatosCopiarPegar()">Enviar</button>
+                    <button type="reset">Borrar todo</button>
                 </fieldset>
             </form>
         </body>
