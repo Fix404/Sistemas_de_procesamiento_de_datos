@@ -21,12 +21,31 @@
 			vnombre = document.getElementById("Nombre").value;
 			vapellido = document.getElementById("Apellido").value;
 			vnum = document.getElementById("dni").value;
+            vnac = document.getElementById("fecha_nacimiento").value;
+            vdomi = document.getElementById("Domicilio").value;
+            vlocali = document.getElementById("Localidad").value;
 			/* Imprime los datos */		
 			document.write("Los datos ingresados fueron: <br/>");
 			document.write("Apellido: "+vapellido+"<br/>");
 			document.write("Nombre: "+vnombre+"<br/>");
 			document.write("Documento: "+vnum+"<br/>");
+            document.write("Fecha de nacimiento: "+vnac+"<br/>");
+            document.write("Domicilio: "+vdomi+"<br/>");
+            document.write("Localidad: "+vlocali+"<br/>");
             document.write("<br/>");
+            vingles = document.getElementById("Inglés").value;
+            var v_level_ingles = document.getElementById("Nivel_Inglés").innerHTML;
+			vportu = document.getElementById("Portugués").value;
+            var v_level_portu = document.getElementById("Nivel_Portugués").innerHTML;
+			valeman = document.getElementById("Alemán").value;
+            var v_level_aleman = document.getElementById("Nivel_Alemán").innerHTML;
+            vindio = document.getElementById("Indio").value;
+            var v_level_indio = document.getElementById("Nivel_Indio").innerHTML;
+            document.write("Los idiomas que maneja son: <br/>" );
+            document.write("Inglés: "+vingles+"con un nivel de "+v_level_ingles+"<br/>");
+            document.write("Portugués: "+vportu+"con un nivel de "+v_level_portu+"<br/>");
+            document.write("Alemán: "+valeman+"con un nivel de "+v_level_aleman+"<br/>");
+            document.write("Indio: "+vindio+"con un nivel de "+v_level_indio+"<br/>");
             document.write("Por razones de seguridad nacional, sólo se muestran estos datos. El resto será almacenado y analizado por el bienestar de nuestro glorioso régimen");
 			/*******************************************************/
 				for (var i = 0; i <  radios.length; i++) {
